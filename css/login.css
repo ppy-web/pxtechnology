@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    user-select: none;
+}
+
+/* 头部导航开始 */
+header {
+    z-index: 333;
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+    background: snow;
+}
+
+.navBox {
+    width: 80%;
+    margin: 0 auto;
+
+    height: 70px;
+    position: relative;
+    top: 0;
+}
+
+.logdiv {
+    padding: 19px 0;
+    display: inline-block;
+}
+
+.imgBox {
+    padding: 0 10px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.logdiv img {
+    height: 28px;
+}
+
+.navBox h2 {
+    padding: 0 10px;
+    display: inline-block;
+    font-size: 20px;
+    border-left: rgb(128, 127, 127) solid 1px;
+
+}
+
+.navBox ul {
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
+    position: absolute;
+    right: 0;
+}
+
+.navBox li {
+    color: #909399;
+    height: 70px;
+    line-height: 70px;
+    font-size: 14px;
+    display: inline-block;
+    float: left;
+    margin: 0 30px;
+}
+
+.navBox a {
+    color: #909399;
+    text-decoration: none;
+
+}
+
+/* 顶部导航结束 */
+
+/* 内容开始 */
+
+/* 给整体内容设置大小和背景 */
+.contentdiv {
+    width: 100%;
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+    margin-bottom: 31px;
+}
+
+.bgimg>img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 登录表单样式 */
+.contentdiv form {
+    position: absolute;
+    bottom: 23%;
+    right: 12%;
+    z-index: 99;
+    padding: 15px 30px 25px;
+    border-radius: 8px;
+    background: hsla(0, 0%, 100%, .6);
+    box-shadow: 0 5px 10px 0 rgba(0, 55, 115, .3);
+}
+
+.welcome>p {
+    /* margin-bottom: 24px; */
+    font-size: 24px;
+    font-weight: bolder;
+    color: #666;
+    opacity: .67;
+    display: inline-block;
+}
+
+.welcome>span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    padding: 24px;
+    color: #016cdf;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* 给输入框加图标 */
+.user,
+.tel,
+.psw,
+.reg {
+    display: block;
+    width: 250px;
+    height: 35px;
+    margin-top: 20px;
+    border: grey 1px solid;
+    border-radius: 5px;
+    padding-left: 35px;
+    font-size: 12px;
+}
+
+.user {
+    background: url("../images/user.png") 6px 6px no-repeat;
+    background-size: 20px;
+    background-color: #fff;
+}
+
+.tel {
+    background: url("../images/tel.png") 6px 6px no-repeat;
+    background-size: 20px;
+    background-color: #fff;
+}
+
+.psw {
+    background: url("../images/psw.png") 6px 6px no-repeat;
+    background-size: 20px;
+    background-color: #fff;
+}
+
+.reg {
+    background: url("../images/reg.png") 6px 6px no-repeat;
+    background-size: 20px;
+    background-color: #fff;
+}
+
+/* 验证码小盒子 */
+.code {
+    position: relative;
+    width: 290px;
+    height: 35px;
+    margin-top: 20px;
+}
+
+.code input {
+    border: grey 1px solid;
+    border-radius: 5px;
+    height: 35px;
+    width: 100px;
+}
+
+.code img {
+    border-radius: 5px;
+    height: 35px;
+    width: 90px;
+    position: absolute;
+    right: 50px;
+    top: 1px;
+}
+
+.code span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    padding: 9px 0;
+    color: #016cdf;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* 记住密码小盒子 */
+.remember {
+    position: relative;
+    width: 290px;
+    height: 35px;
+    margin-top: 20px;
+}
+
+.remember input {
+    border: grey 1px solid;
+}
+
+.remember .yes {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.remember>.find {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.remember>.find>a {
+    text-decoration: none;
+    color: #016cdf;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* 登录按钮 */
+.register input {
+    font-size: 24px;
+    color: white;
+    width: 290px;
+    height: 50px;
+    background: #016cdf;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* 手动轮播按钮 */
+.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circle span {
+    display: inline-block;
+    width: 35px;
+    height: 3px;
+    margin: 5px;
+    border-radius: 3px;
+    background: rgb(197, 197, 197);
+}
+
+.circle .active {
+    background: #ffffff;
+}
+
+/* 在线客服盒子 */
+.online {
+    padding: 10px;
+    display: none;
+    z-index: 666;
+    position: absolute;
+    right: 0;
+    bottom: 31px;
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 5px 5px rgba(71, 70, 70, 0.6);
+
+}
+
+.online a {
+    text-decoration: none;
+    color: blue;
+    display: block;
+}
+
+.online>.drag {
+    position: relative;
+    cursor: move;
+    width: 100%;
+    height: 50px;
+    background: #F8F8F9;
+}
+
+.online>.drag img {
+    position: absolute;
+    width: 30px;
+}
+
+.online>.drag h4 {
+    position: absolute;
+    left: 40px;
+    top: 5px;
+
+}
+
+.online>.drag>span {
+    color: #666;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.online>.left {
+    width: 45%;
+    height: 350px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.online>.right {
+    width: 45%;
+    height: 350px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+}
+
+/* 尾部 */
+footer {
+    font-size: 12px;
+    background: #FFFFFF;
+    color: #9B9B9B;
+    width: 100%;
+    height: 31px;
+    position: fixed;
+    bottom: 0;
+}
+
+footer>p {
+    text-align: center;
+    height: 31px;
+    line-height: 31px;
+}

@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FAFAFA;
+    user-select: none;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 666;
+    background: snow;
+    box-shadow: 0 3px 3px rgba(163, 163, 163, 0.5);
+}
+
+.headerBox {
+    margin: 0 auto;
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+
+header img {
+    margin-left: 10px;
+    height: 32px;
+    vertical-align: middle;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-nav {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: inline-block;
+}
+
+.header-nav .active_red {
+    color: red;
+}
+
+.header-nav>ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav>ul>li {
+    display: inline-block;
+}
+
+.header-nav a {
+    padding: 20px 10px;
+    text-decoration: none;
+    color: #8E8E8E;
+    font-size: 14px;
+}
+
+.header-nav a:hover {
+    color: red;
+}
+
+/* 鼠标移至 联系我们,展开下拉框 */
+.dropDown span {
+    background: white;
+    position: absolute;
+    left: 52px;
+    top: -8px;
+    transform: rotate(45deg);
+    padding: 7px;
+    border-left: rgb(175, 174, 174) 1px solid;
+    border-top: rgb(175, 174, 174) 1px solid;
+}
+
+.dropDownOption {
+    transform: translateX(-25px);
+    width: 124px;
+    margin-top: 15px;
+    border: 1px solid rgb(175, 174, 174);
+    border-bottom: none;
+    display: none;
+    border-radius: 5px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 1px 2px rgb(231, 228, 228);
+    list-style: none;
+}
+
+
+.dropDownOption>li {
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid rgb(175, 174, 174);
+}
+
+.dropDownOption>li>a {
+    display: block;
+    color: black;
+    padding: 10px;
+    transition: all 0.3s linear;
+}
+
+.dropDownOption>li>a:hover {
+    background: #EE6E73;
+    color: white;
+    padding: 10px 12px;
+}
+
+
+.dropDown:hover>.dropDownOption {
+    display: block;
+}
+
+div.conteiner {
+    width: 100%;
+    margin-top: 70px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #acaaaa;
+}
+
+.conteiner>div:not(.introduce) {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.introduce {
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.introduce>.homebg>img {
+    width: 100%;
+}
+
+.introduce>.last {
+    background: url('../images/last.png') no-repeat;
+    background-size: contain;
+    width: 27px;
+    height: 44px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+}
+
+.introduce>.next {
+    background: url('../images/next.png') no-repeat;
+    background-size: contain;
+    width: 27px;
+    height: 44px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+/* 导航圆圈 */
+.circle {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+}
+
+.circle span {
+    margin: 0 3px;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: #C9C8C8;
+    border-radius: 5px;
+}
+
+.circle>a>.active {
+    background: black;
+}
+
+/* 标题样式 */
+h2 {
+    margin-left: 8px;
+    font-weight: normal;
+    font-size: 26px;
+    padding: 40px 0 20px;
+    color: #898989;
+}
+
+.starProduct>.productDetial {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.starProduct>.productDetial>div {
+    margin: 8px;
+    width: 25%;
+    position: relative;
+}
+
+.productDetial img {
+    width: 100%;
+}
+
+
+.buttonDiv {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+}
+
+.buttonStyle_1 {
+    padding: 7px 20px 7px;
+    border: 1px solid #D80C18;
+    margin: 10px;
+    border-radius: 6px;
+    background: #D80C18;
+
+}
+
+.buttonStyle_2 {
+    padding: 7px 20px 7px;
+    margin: 10px;
+    border: 1px solid red;
+    border-radius: 6px;
+    background: #FFFFFF;
+}
+
+.buttonStyle_1>a {
+    color: white;
+    text-decoration: none;
+}
+
+.buttonStyle_2>a {
+    color: red;
+    text-decoration: none;
+}
+
+
+.software>div,
+.hardware>div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.software>div img,
+.hardware>div img {
+    box-sizing: border-box;
+    width: 23%;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.hardware>div>img:hover,
+.software>div>img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px 0 70px;
+    position: relative;
+}
+
+.footer-left {
+    color: #808080;
+    font-size: 12px;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-left .active_red {
+    color: red;
+}
+
+.footer-left dt {
+    color: #595757;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 6px 0;
+}
+
+.footer-left dd {
+    padding: 3px 0;
+}
+
+.footer-left dd>a {
+    color: #808080;
+    text-decoration: none;
+}
+
+.footer-left>div {
+    margin: 0 40px;
+}
+
+.footer-right {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    padding: 0 50px;
+    border-left: 1px solid rgba(170, 168, 168, 0.3);
+}
+
+.footer-right>div {
+    color: #808080;
+    font-size: 12px;
+    text-align: center;
+    margin: 5px;
+    /* border: 1px solid; */
+    display: inline-block;
+}
+
+.footer-right>div>img {
+    height: 100px;
+    width: 100px;
+}
